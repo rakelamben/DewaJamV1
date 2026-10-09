@@ -1,0 +1,98 @@
+# =============================================================================
+# Dewa Jam — Monorepo .gitignore
+# Python (FastAPI) + TypeScript (React/Vite)
+# =============================================================================
+
+# ---------------------------------------------------------------------------
+# Environment variables (jangan pernah di-commit)
+# ---------------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+backend/.env
+frontend/.env
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtualenv
+.venv/
+venv/
+ENV/
+env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# Testing & coverage
+.pytest_cache/
+coverage/
+.coverage
+.coverage.*
+htmlcov/
+*.xml
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pytype/
+
+# Ruff cache
+.ruff_cache/
+
+# IPython
+.ipython/
+*.ipynb_checkpoints
+
+# ---------------------------------------------------------------------------
+# Node.js / Frontend
+# ---------------------------------------------------------------------------
+node_modules/
+frontend/node_modules/
+
+# Build output
+dist/
+frontend/dist/
+frontend/build/
+
+# Vite
+*.local
+
+# Testing
+coverage/
+frontend/coverage/
+
+# ---------------------------------------------------------------------------
+# IDE dan editor
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------------------
+# Alembic
+# ---------------------------------------------------------------------------
+# Jangan ignore migrations/versions — file migrasi harus di-commit
+
+# ---------------------------------------------------------------------------
+# Misc
+# ---------------------------------------------------------------------------
+*.log
+*.tmp
+*.bak

@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  :root {
+    --primary: #FF4800;
+    --primary-hover: #C93700;
+    --primary-active: #9F2800;
+    --secondary: #124548;
+    --background: #F8F5EE;
+    --surface: #FFFFFF;
+    --text-primary: #1F1F1F;
+    --text-secondary: #9B9897;
+    --border-gray: #CFCCCB;
+    --destructive: #D9002B;
+
+    /* shadcn/ui theme tokens used by the official sidebar and card components */
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  html {
+    font-family: 'Plus Jakarta Sans', Lato, system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #F8F5EE;
+    color: #1F1F1F;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #F8F5EE;
+    color: #1F1F1F;
+  }
+
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #1F1F1F;
+  }
+
+  h1 {
+    font-family: Playfair, Georgia, serif;
+    font-weight: 300;
+  }
+
+  /* Focus ring standard from DesignMD: 3px blur orange at 10% opacity */
+  *:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 72, 0, 0.1);
+  }
+}

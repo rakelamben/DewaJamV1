@@ -1,0 +1,1 @@
+"""Tests untuk modul Auth."""
